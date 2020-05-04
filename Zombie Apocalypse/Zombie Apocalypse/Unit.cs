@@ -22,13 +22,20 @@ namespace Zombie_Apocalypse
         //tylko soldier
         public int health { get; set; }
 
+        
         public string Litera()
         {
                 if (type == 0) return "H";
                 if (type == 1) return "Z"; 
                 return "S";
         }
-        
+        public string Nazwa()
+        {
+            if (type == 0) return "Human";
+            if (type == 1) return "Zombie";
+            return "Soldier";
+        }
+
     }
     
 }
